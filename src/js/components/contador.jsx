@@ -92,7 +92,15 @@ const SecondsCounter = () => {
         <div className="w-100">
             {/*Display del contador */}
             <div className="counter-display">
-                {formatTime(seconds)}
+               <div className="digit icon">
+                    <i className="fa-regular fa-clock"></i>
+                </div>
+                {formatTime(seconds).split('').map((digit, index) => (
+                    <div key={index} className="digit">
+                        {digit}
+                    </div>
+                ))}
+                
             </div>
 
             {/* Panel de Controles */}
