@@ -1,11 +1,42 @@
-/* 
+body {
+    background-color: #f0f0f0; /* Un fondo gris claro */
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+/* El display digital del contador */
+.counter-display {
+    font-size: 5rem; 
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace; 
+    background-color: #333; 
+    color: #39ff14; 
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: inline-block; 
+    margin-top: 1rem;
+    border: 4px solid #555;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.4) inset,
+                0 0 10px rgba(57, 255, 20, 0.3); 
+    text-shadow: 0 0 8px #39ff14;
+    text-align: center;
+    min-width: 300px;
+}
 
-*/
+/* Contenedores para controles */
+.control-panel, .options-panel {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Boton switch */
+.form-check-input {
+    width: 3.5em;
+    height: 1.8em;
+    cursor: pointer;
+}
+.form-check-label {
+    cursor: pointer;
+    padding-top: 4px;
+}
